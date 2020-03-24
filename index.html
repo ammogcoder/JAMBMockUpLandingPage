@@ -39,16 +39,46 @@
             color: #6c2c24;
         }
 
-        .hero::after {
-            background: url(/assets/images/business-businessmen-classroom-communication-267507.jpg);
+        .hero {
+            margin-top: 71px;
+            position: relative;
+        }
+
+        .hero-image {
+            background: url(/assets/images/computer-room-pexels-photo-267507.jpeg);
             position: absolute;
             content: ' ';
-            height: 600px;
             background-size: cover;
             background-repeat: no-repeat ;
             width: 100%;
+            top: 0;
             
         }
+
+        .hero-image, .hero {
+            height: 300px;
+
+        }
+
+        .carousel {
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .carousel-item {
+            height: 7em;
+        }
+
+        .carousel-caption {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* .page-body{
+            margin-top: 300px;
+        } */
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -69,7 +99,7 @@
 </head>
 
 <body data-gr-c-s-loaded="true">
-    <div class="d-flex flex-column flex-md-row align-items-center bg-white border-bottom shadow-sm">
+    <div class="d-flex fixed-top flex-column flex-md-row align-items-center bg-white border-bottom shadow-sm">
         <img src="assets/images/logo_big.png" alt="" class="site-logo">
         <div class="mr-auto"><p class="company-name h5 mb-0">JOINT ADMISSIONS AND MATRICULATION BOARD</p><p class="mb-0 text-right text-small company-name-subtext">...enhancing lives</p></div>
         <!-- <nav class="my-2 my-md-0 mr-md-3">
@@ -82,13 +112,25 @@
     </div>
 
     <div class="hero">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade position-absolute" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
+                <div class="carousel-caption">
+                    <p class="h5">First slide label</p>
+                    <p>Nullae vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
               </div>
               <div class="carousel-item">
+                <div class="carousel-caption">
+                    <p class="h5">First slide label</p>
+                    <p>Nullad vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
               </div>
               <div class="carousel-item">
+                <div class="carousel-caption">
+                    <p class="h5">First slide label</p>
+                    <p>Nullah vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
               </div>
             </div>
             <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -100,9 +142,10 @@
               <span class="sr-only">Next</span>
             </a> -->
           </div>
+          <div class="hero-image"></div>
     </div>
 
-    <div class="container">
+    <div class="container page-body pt-3">
         <div class="card-deck mb-3 text-center">
             <div class="card mb-4 shadow-sm">
                 <div class="card-header bg-white border-bottom-0">
@@ -184,7 +227,7 @@
             </div>
         </div>
 
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <footer class="pt-4 my-md-5 pt-1 border-top">
             <div class="row">
                 <span class="w-100 text-center" style="font-weight: bold; color: #003300;">
                     Copyright © 2020. Joint Admissions and Matriculation Board
@@ -192,8 +235,9 @@
             </div>
         </footer>
     </div>
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
