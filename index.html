@@ -42,16 +42,19 @@
         .hero {
             margin-top: 71px;
             position: relative;
+            background: linear-gradient(134deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 41%,rgba(188, 188, 188, 0.04) 41%, rgba(188, 188, 188, 0.04) 100%),linear-gradient(19deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 46%,rgba(233, 233, 233, 0.04) 46%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(65deg, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 97%,rgba(108, 108, 108, 0.04) 97%, rgba(108, 108, 108, 0.04) 100%),linear-gradient(311deg, rgba(58, 58, 58, 0.04) 0%, rgba(58, 58, 58, 0.04) 79%,rgba(220, 220, 220, 0.04) 79%, rgba(220, 220, 220, 0.04) 100%),linear-gradient(90deg, rgb(25, 147, 13),rgb(68, 253, 105));
         }
 
         .hero-image {
-            background: url(/assets/images/computer-room-pexels-photo-267507.jpeg);
+            background: url(/assets/images/undraw_shared_workspace_hwky.svg);
             position: absolute;
             content: ' ';
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat ;
-            width: 100%;
+            width: 616px;
             top: 0;
+            right: 0;
+
             
         }
 
@@ -62,8 +65,7 @@
 
         .carousel {
             bottom: 0;
-            right: 0;
-            left: 0;
+            width: 100%;
         }
 
         .carousel-item {
@@ -73,6 +75,9 @@
         .carousel-caption {
             display: flex;
             flex-direction: column;
+            left: 0;
+            right: unset;
+            padding: 10px;
         }
 
         /* .page-body{
