@@ -12,7 +12,8 @@
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/pricing/"> -->
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Favicons -->
     <!-- <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -40,9 +41,11 @@
         }
 
         .hero {
+            display: flex;
+            height: 300px;
             margin-top: 71px;
             position: relative;
-            background: linear-gradient(134deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 41%,rgba(188, 188, 188, 0.04) 41%, rgba(188, 188, 188, 0.04) 100%),linear-gradient(19deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 46%,rgba(233, 233, 233, 0.04) 46%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(65deg, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 97%,rgba(108, 108, 108, 0.04) 97%, rgba(108, 108, 108, 0.04) 100%),linear-gradient(311deg, rgba(58, 58, 58, 0.04) 0%, rgba(58, 58, 58, 0.04) 79%,rgba(220, 220, 220, 0.04) 79%, rgba(220, 220, 220, 0.04) 100%),linear-gradient(90deg, rgb(25, 147, 13),rgb(68, 253, 105));
+            background: linear-gradient(134deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 41%, rgba(188, 188, 188, 0.04) 41%, rgba(188, 188, 188, 0.04) 100%), linear-gradient(19deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 46%, rgba(233, 233, 233, 0.04) 46%, rgba(233, 233, 233, 0.04) 100%), linear-gradient(65deg, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 97%, rgba(108, 108, 108, 0.04) 97%, rgba(108, 108, 108, 0.04) 100%), linear-gradient(311deg, rgba(58, 58, 58, 0.04) 0%, rgba(58, 58, 58, 0.04) 79%, rgba(220, 220, 220, 0.04) 79%, rgba(220, 220, 220, 0.04) 100%), linear-gradient(90deg, rgb(25, 147, 13), rgb(68, 253, 105));
         }
 
         .hero-image {
@@ -50,21 +53,17 @@
             position: absolute;
             content: ' ';
             background-size: contain;
-            background-repeat: no-repeat ;
+            background-repeat: no-repeat;
             width: 616px;
             top: 0;
             right: 0;
-
-            
-        }
-
-        .hero-image, .hero {
             height: 300px;
+
 
         }
 
         .carousel {
-            bottom: 0;
+            bottom: 25%;
             width: 100%;
         }
 
@@ -80,8 +79,8 @@
             padding: 10px;
         }
 
-        .page-body{
-            background: linear-gradient(15deg, rgba(34, 34, 34,0.03) 0%, rgba(34, 34, 34,0.03) 39%,rgba(197, 197, 197,0.03) 39%, rgba(197, 197, 197,0.03) 49%,rgba(244, 244, 244,0.03) 49%, rgba(244, 244, 244,0.03) 100%),linear-gradient(264deg, rgba(57, 57, 57,0.03) 0%, rgba(57, 57, 57,0.03) 37%,rgba(230, 230, 230,0.03) 37%, rgba(230, 230, 230,0.03) 98%,rgba(224, 224, 224,0.03) 98%, rgba(224, 224, 224,0.03) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+        .page-body {
+            background: linear-gradient(15deg, rgba(34, 34, 34, 0.03) 0%, rgba(34, 34, 34, 0.03) 39%, rgba(197, 197, 197, 0.03) 39%, rgba(197, 197, 197, 0.03) 49%, rgba(244, 244, 244, 0.03) 49%, rgba(244, 244, 244, 0.03) 100%), linear-gradient(264deg, rgba(57, 57, 57, 0.03) 0%, rgba(57, 57, 57, 0.03) 37%, rgba(230, 230, 230, 0.03) 37%, rgba(230, 230, 230, 0.03) 98%, rgba(224, 224, 224, 0.03) 98%, rgba(224, 224, 224, 0.03) 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
         }
 
         .bd-placeholder-img {
@@ -93,52 +92,93 @@
             user-select: none;
         }
 
-        @media (min-width: 768px) {
+        @media (max-width: 1024px) {
+
+            .hero-image {
+                width: 431px;
+                background-position: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .btn {
+                font-size: .7em;
+            }
+
+            .company-name {
+                font-size: .8em;
+            }
+
+            .company-name-subtext {
+                font-size: .5em;
+            }
+
+            .hero-image {
+                width: 300px;
+                background-position: center;
+            }
+
+            .carousel-caption p {
+                font-size: .9em;
+            }
+
+            .list-unstyled li {
+                font-size: .5em;
+            }
+
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
+
     </style>
     <!-- Custom styles for this template -->
     <link href="pricing.css" rel="stylesheet">
 </head>
 
 <body data-gr-c-s-loaded="true">
-    <div class="d-flex fixed-top flex-column flex-md-row align-items-center bg-white border-bottom shadow-sm">
-        <img src="assets/images/logo_big.png" alt="" class="site-logo">
-        <div class="mr-auto"><p class="company-name h5 mb-0">JOINT ADMISSIONS AND MATRICULATION BOARD</p><p class="mb-0 text-right text-small company-name-subtext">...enhancing lives</p></div>
-        <!-- <nav class="my-2 my-md-0 mr-md-3">
+    <div class="bg-white border-bottom shadow-sm fixed-top">
+        <div class="container d-flex flex-column flex-md-row align-items-center ">
+            <img src="assets/images/logo_big.png" alt="" class="site-logo">
+            <div class="mr-auto">
+                <p class="company-name h5 mb-0">JOINT ADMISSIONS AND MATRICULATION BOARD</p>
+                <p class="mb-0 text-right text-small company-name-subtext">...enhancing lives</p>
+            </div>
+            <!-- <nav class="my-2 my-md-0 mr-md-3">
             <a class="p-2 text-dark" href="#">Features</a>
             <a class="p-2 text-dark" href="#">Enterprise</a>
             <a class="p-2 text-dark" href="#">Support</a>
             <a class="p-2 text-dark" href="#">Pricing</a>
-        </nav>
-        <a class="btn btn-outline-success" href="#">Sign up</a> -->
+        </nav> -->
+            <a class="btn btn-outline-success" href="#">Sign up for UTME/DE</a>
+        </div>
     </div>
 
     <div class="hero">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade position-absolute" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-caption">
-                    <p class="h5">First slide label</p>
-                    <p>Nullae vitae elit libero, a pharetra augue mollis interdum.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                    <p class="h5">First slide label</p>
-                    <p>Nullad vitae elit libero, a pharetra augue mollis interdum.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                    <p class="h5">First slide label</p>
-                    <p>Nullah vitae elit libero, a pharetra augue mollis interdum.</p>
-                  </div>
-              </div>
-            </div>
-            <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <div class="container position-relative d-flex">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade position-absolute" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption">
+                            <p class="h5">UTME Registration</p>
+                            <p><a href="http://www.jamb.gov.ng" target="_blank" class="btn btn-link text-light">Click :: Available at CBT Centres::</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <p class="h5">Direct Entry</p>
+                            <p><a href="http://www.jamb.gov.ng" target="_blank" class="btn btn-link text-light">Click :: Available at CBT Centres::</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <p class="h5">Notice!</p>
+                            <p><a href="http://www.jamb.gov.ng" target="_blank" class="btn btn-link text-light"> Click :: Important Information for Foreign Candidates</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
@@ -146,105 +186,150 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a> -->
-          </div>
-          <div class="hero-image"></div>
+            </div>
+            <div class="mt-auto mb-5">
+                <button class="btn btn-outline-light m-1">UTME 2020 Examination Slip</button><button
+                    class="btn btn-light btn-outline-success m-1">Create e-Facility Account/Log in</button></div>
+            <div class="hero-image"></div>
+        </div>
     </div>
 
     <div class="page-body">
         <div class="container page-body pt-3">
-        <div class="card-deck mb-3 text-center">
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header bg-white border-bottom-0">
-                    <h4 class="my-0 font-weight-normal">Print Result Slip</h4>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <h2 class="card-title pricing-card-title">₦1000 <small class="text-muted">/ print</small></h2>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>This allows candidates to request for printing of result slip</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to proceed</button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header bg-white border-bottom-0">
-                    <h4 class="my-0 font-weight-normal">Admission Letter Printing</h4>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <h2 class="card-title pricing-card-title">₦1000 <small class="text-muted">/ print</small></h2>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>This allows candidates to print Admission letters.</li>
-                        <li>Only candidates with admission will be able to use this service.</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to proceed</button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header bg-white border-bottom-0">
-                    <h4 class="my-0 font-weight-normal">Change of Admission Letter</h4>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <h2 class="card-title pricing-card-title">₦10,000 <small class="text-muted">/ Application</small></h2>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing.</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to proceed</button>
-                </div>
-            </div>
-        </div>
-        <div class="card-deck mb-3 text-center">
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header bg-white border-bottom-0">
-                    <h4 class="my-0 font-weight-normal">Late Application</h4>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <h2 class="card-title pricing-card-title">₦10,000 <small class="text-muted">/ application</small></h2>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing.</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to proceed</button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header bg-white border-bottom-0">
-                    <h4 class="my-0 font-weight-normal">Check Admission Status</h4>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <h2 class="card-title pricing-card-title">₦0 <small class="text-muted">/ check</small></h2>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>This allows candidates to check admission status. This is necessary before going ahead to make payment for Admission Letter Printing. Payment is NOT required for this service.</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Get started</button>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-header bg-white border-bottom-0">
-                    <h4 class="my-0 font-weight-normal">Enterprise</h4>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <h2 class="card-title pricing-card-title">₦29 <small class="text-muted">/ mo</small></h2>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>30 users included</li>
-                        <li>15 GB of storage</li>
-                        <li>Phone and email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Contact us</button>
-                </div>
-            </div>
-        </div>
+            <div class="d-flex flex-column align-items-center pb-4">
 
-        <footer class="pt-4 pt-1 border-top">
-            <div class="row">
-                <span class="w-100 text-center" style="font-weight: bold; color: #003300;">
-                    Copyright © 2020. Joint Admissions and Matriculation Board
-                </span>
+                <h3 style="color: green; text-align: center;padding-left:-10px">
+                    Post-Registration e-Facilities
+                </h3>
+                <div class="w-25 border-bottom">
+
+                </div>
             </div>
-        </footer>
+            <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-white border-bottom-0">
+                        <h4 class="my-0 font-weight-normal">Print Result Slip</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title pricing-card-title">₦1000 <small class="text-muted">/ print</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>This allows candidates to request for printing of result slip</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to
+                            proceed</button>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-white border-bottom-0">
+                        <h4 class="my-0 font-weight-normal">Admission Letter Printing</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title pricing-card-title">₦1000 <small class="text-muted">/ print</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>This allows candidates to print Admission letters.</li>
+                            <li>Only candidates with admission will be able to use this service.</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to
+                            proceed</button>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-white border-bottom-0">
+                        <h4 class="my-0 font-weight-normal">Change of Admission Letter</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title pricing-card-title">₦10,000 <small class="text-muted">/
+                                Application</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Candidates can print their admission letter for their institution/course of choice,
+                                which is now different from their course/institution offered initially. A new admission
+                                letter can be printed after processing.</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to
+                            proceed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-white border-bottom-0">
+                        <h4 class="my-0 font-weight-normal">Late Application</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title pricing-card-title">₦10,000 <small class="text-muted">/
+                                application</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Candidates can print their admission letter for their institution/course of choice,
+                                which is now different from their course/institution offered initially. A new admission
+                                letter can be printed after processing.</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to
+                            proceed</button>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-white border-bottom-0">
+                        <h4 class="my-0 font-weight-normal">Check Admission Status</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title pricing-card-title">₦0 <small class="text-muted">/ check</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>This allows candidates to check admission status. This is necessary before going ahead
+                                to make payment for Admission Letter Printing. Payment is NOT required for this service.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to
+                            proceed</button>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-white border-bottom-0">
+                        <h4 class="my-0 font-weight-normal">
+                            Application for Correction of Data
+                        </h4>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title pricing-card-title">Price varies <small class="text-muted">/ data you're correcting</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Candidates can apply for correction of Names, Date of birth, State/Local Government and Gender. Payment is required for this service.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-success mt-auto">Click here to
+                            proceed</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="pt-4 pt-1 border-top">
+                <div class="row">
+                    <span class="w-100 text-center" style="font-weight: bold; color: #003300;">
+                        Copyright © 2020. Joint Admissions and Matriculation Board
+                    </span>
+                </div>
+            </footer>
+        </div>
     </div>
-</div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
