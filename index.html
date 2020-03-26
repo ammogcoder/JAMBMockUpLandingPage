@@ -30,6 +30,13 @@
 
     <style>
 
+        .btn-small {
+            font-size: .7em;
+            padding: 0.6em;
+            margin: .4em;
+
+        }
+
         .brand {
             margin: 6px 0;
             align-items: center;
@@ -144,11 +151,20 @@
 
         .card-body p {
             text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
 
+        }
+
+        .card-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .card-footer p {
+            margin: auto;
         }
 
         .bd-placeholder-img {
@@ -224,6 +240,12 @@
                 right: 15%;
                 height: 100px;
 
+            }
+                
+            .card-footer {
+                flex-direction: column;
+                justify-content: space-between;
+                
             }
 
         }
@@ -317,7 +339,7 @@
                             <p>This allows candidates to request for printing of result slip</p>
                     </div>
                     <div class="card-footer py-0 bg-white border-top-0 d-flex justify-content-between">
-                        <p class="text-muted">₦1000</p>
+                        <p class="text-muted">₦1000</p><a class="btn btn-small btn-outline-success btn-succes" href="#">Click to proceed</a>
                     </div>
                 </div>
                 <div class="card d-flex justify-content-center hvr-grow mb-4  shadow-sm lead lead" data-aos="fade-up">
@@ -330,7 +352,7 @@
                                 Only candidates with admission will be able to use this service.</p>
                     </div>
                     <div class="card-footer py-0 bg-white border-top-0">
-                        <p class="text-muted">₦1000</p>
+                        <p class="text-muted">₦1000</p> <a class="btn btn-small btn-outline-success btn-succes" href="#">Click to proceed</a>
                     </div>
                 </div>
                 <div class="card d-flex justify-content-center hvr-grow mb-4 shadow-sm lead lead" data-aos="fade-up">
@@ -344,7 +366,7 @@
                                 letter can be printed after processing.</p>
                     </div>
                     <div class="card-footer py-0 bg-white border-top-0">
-                        <p class="text-muted">₦10,000</p>
+                        <p class="text-muted">₦10,000</p> <a class="btn btn-small btn-outline-success btn-succes" href="#">Click to proceed</a>
                     </div>
                 </div>
                 <div class="card d-flex justify-content-center hvr-grow mb-4 shadow-sm lead lead" data-aos="fade-up">
@@ -358,7 +380,7 @@
                                 A new admission letter can be printed after processing.</p>
                     </div>
                     <div class="card-footer py-0 bg-white border-top-0 d-flex justify-content-between">
-                        <p class="text-muted">₦10,000</p>
+                        <p class="text-muted">₦10,000</p> <a class="btn btn-small btn-outline-success btn-succes" href="#">Click to proceed</a>
                     </div>
                 </div>
                 <div class="card d-flex justify-content-center hvr-grow mb-4 shadow-sm lead" data-aos="fade-up">
@@ -372,7 +394,7 @@
                             </p>
                     </div>
                     <div class="card-footer py-0 bg-white border-top-0">
-                        <p class="text-muted">Free</p>
+                        <p class="text-muted">Free</p> <a class="btn btn-small btn-outline-success btn-succes" href="#">Click to proceed</a>
                     </div>
                 </div>
                 <div class="card d-flex justify-content-center hvr-grow mb-4 shadow-sm lead" data-aos="fade-up">
@@ -389,7 +411,7 @@
                     <div class="card-footer py-0 bg-white border-top-0">
                         <p class="text-muted" style="
                         font-size: .7em;
-                    ">Price varies for data correction</p>
+                    ">varies</p> <a class="btn btn-small btn-outline-success btn-succes" href="#">Click to proceed</a>
                     </div>
                 </div>
             </div>
