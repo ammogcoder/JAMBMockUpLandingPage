@@ -114,9 +114,16 @@
         .card {
             width: 250px;
             margin: 20px;
-            height: 320px;
+            height: 400px;
             
         }
+
+        .card:hover {
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+        }
+
         .img-top {
             height: 200px;
             width: auto;
@@ -132,13 +139,15 @@
             overflow: hidden;
             text-overflow:ellipsis;
             white-space: nowrap;
+            word-wrap: break-word;
 
         }
 
-        .card-body p {
+        .card-body {
             overflow: hidden;
             text-overflow:ellipsis;
-            white-space: nowrap;
+            white-space: pre-line;
+            word-wrap: break-word;
 
         }
 
@@ -403,12 +412,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-  AOS.init();
-//     $('.carousel').carousel({
-//   interval: 2000
-// })
-</script>
-</body></html>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </body>
+</html>
