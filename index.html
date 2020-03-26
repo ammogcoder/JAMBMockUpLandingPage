@@ -39,6 +39,19 @@
 
         }
 
+.btn-success {
+    background-color: #1f6425;
+}
+
+.btn-outline-success {
+    border-color: #1f6425;
+}
+
+
+
+.btn-outline-success:hover {
+            background-color: #1f6425;
+        }
         .brand {
             margin: 6px 0;
             -webkit-box-align: center;
@@ -66,7 +79,7 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            height: 300px;
+            height: 400px;
             margin-top: 71px;
             position: relative;
             background: -o-linear-gradient(316deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 41%, rgba(188, 188, 188, 0.04) 41%, rgba(188, 188, 188, 0.04) 100%), -o-linear-gradient(71deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 46%, rgba(233, 233, 233, 0.04) 46%, rgba(233, 233, 233, 0.04) 100%), -o-linear-gradient(25deg, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 97%, rgba(108, 108, 108, 0.04) 97%, rgba(108, 108, 108, 0.04) 100%), -o-linear-gradient(139deg, rgba(58, 58, 58, 0.04) 0%, rgba(58, 58, 58, 0.04) 79%, rgba(220, 220, 220, 0.04) 79%, rgba(220, 220, 220, 0.04) 100%), -o-linear-gradient(left, rgb(25, 147, 13), rgb(68, 253, 105));
@@ -86,6 +99,19 @@
 
 
         }
+        .hero-image-under {
+            background: url(assets/images/hero-7-shape-light.png);
+            position: absolute;
+            content: ' ';
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            height: 135px;
+
+
+        }
 
         .carousel {
             bottom: 25%;
@@ -93,7 +119,8 @@
         }
 
         .carousel-item {
-            height: 7em;
+            height: 12em;
+    width: 33em;
         }
 
         .carousel-caption {
@@ -113,8 +140,20 @@
             width: 100%;
         }
 
-        .carousel-caption p {
+.carousel-caption p:first-child {
+    word-spacing: .10em;
+    font-size: 1.5em;
+}
+
+.carousel-caption p:nth-child(2) {
+    word-spacing: .12em;
+    font-size: 1.5em;
+}
+
+        .carousel-caption p, .carousel-caption p a  {
             text-align: center;
+            color: white;
+            font-weight: 900;
         }
 
         .carousel-action-buttons {
@@ -130,6 +169,7 @@
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
+                    height: 19em;
         }
 
         .action-buttons {
@@ -320,26 +360,26 @@
     </div>
 
     <div class="hero">
-        <div class="container position-relative d-flex">
+        <div class="container-fluid position-relative d-flex">
             <div class="carousel-action-buttons">
             <div id="carouselExampleFade" class="carousel slide carousel-fade position-absolute" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-caption">
                             <p class="h5 lead">UTME Registration</p>
-                            <p><a href="http://www.jamb.gov.ng" target="_blank" class="btn btn-link text-light lead">Click :: Available at CBT Centres::</a></p>
+                            <p><a href="http://www.jamb.gov.ng" target="_blank" class="btn btn-link">Click here :: Available at CBT Centres::</a></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption">
                             <p class="h5 lead">Direct Entry</p>
-                            <p><a href="http://www.jamb.gov.ng" target="_blank" class="btn btn-link text-light lead">Click :: Available at CBT Centres::</a></p>
+                            <p><a href="http://www.jamb.gov.ng" target="_blank" class="btn btn-link">Click here :: Available at CBT Centres::</a></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption">
                             <p class="h5 lead">Notice!</p>
-                            <p><a href="http://www.jamb.gov.ng" target="_blank" class="btn btn-link text-light lead"> Click :: Important Information for Foreign Candidates</a></p>
+                            <p><a href="http://www.jamb.gov.ng" target="_blank" class="btn btn-link"> Click here :: Important Information for Foreign Candidates</a></p>
                         </div>
                     </div>
                 </div>
@@ -357,10 +397,11 @@
             </div>
                 <div class="hero-image"></div>
         </div>
+        <div class="hero-image-under"></div>
     </div>
 
     <div class="page-body">
-        <div class="pt-3">
+        <div class="pt-3 container-fluid">
             <div class="d-flex flex-column align-items-center pb-4">
 
                 <h3 class="" style="color: green; text-align: center;padding-left:-10px">
