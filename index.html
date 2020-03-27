@@ -27,353 +27,8 @@
 <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c"> -->
 
-
-    <style>
-        /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-        
-        .btn-small {
-            font-size: .7em;
-            padding: 0.6em;
-            margin: .4em;
-
-        }
-
-.btn-success, .btn-outline-success:hover {
-    background-color: #1f6425;
-}
-
- .text-success {
-     color: #1f6425;
- }
-
-        .btn-outline-success {
-            border-color: #1f6425;
-        }
-
-        .brand {
-            margin: 6px 0;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-        }
-
-        .site-logo {
-            height: 70px;
-            width: auto;
-        }
-
-        .company-name {
-            color: #125f2b;
-        }
-
-        .company-name-subtext {
-            color: #6c2c24;
-        }
-
-        .hero {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            height: 400px;
-            margin-top: 71px;
-            position: relative;
-            background: -o-linear-gradient(316deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 41%, rgba(188, 188, 188, 0.04) 41%, rgba(188, 188, 188, 0.04) 100%), -o-linear-gradient(71deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 46%, rgba(233, 233, 233, 0.04) 46%, rgba(233, 233, 233, 0.04) 100%), -o-linear-gradient(25deg, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 97%, rgba(108, 108, 108, 0.04) 97%, rgba(108, 108, 108, 0.04) 100%), -o-linear-gradient(139deg, rgba(58, 58, 58, 0.04) 0%, rgba(58, 58, 58, 0.04) 79%, rgba(220, 220, 220, 0.04) 79%, rgba(220, 220, 220, 0.04) 100%), -o-linear-gradient(left, rgb rgb(63, 106, 70), rgb(104, 149, 107));
-            background: linear-gradient(134deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 41%, rgba(188, 188, 188, 0.04) 41%, rgba(188, 188, 188, 0.04) 100%), linear-gradient(19deg, rgba(41, 41, 41, 0.04) 0%, rgba(41, 41, 41, 0.04) 46%, rgba(233, 233, 233, 0.04) 46%, rgba(233, 233, 233, 0.04) 100%), linear-gradient(65deg, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 97%, rgba(108, 108, 108, 0.04) 97%, rgba(108, 108, 108, 0.04) 100%), linear-gradient(311deg, rgba(58, 58, 58, 0.04) 0%, rgba(58, 58, 58, 0.04) 79%, rgba(220, 220, 220, 0.04) 79%, rgba(220, 220, 220, 0.04) 100%), linear-gradient(90deg,  rgb(63, 106, 70), rgb(104, 149, 107));
-        }
-
-        .hero-image {
-            background: url(assets/images/undraw_shared_workspace_hwky.svg);
-            position: absolute;
-            content: ' ';
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 616px;
-            top: 0;
-            right: 0;
-            height: 300px;
-
-
-        }
-
-        .hero-image-under {
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-            right: 0;
-        }
-
-        .carousel {
-            bottom: 25%;
-            width: 100%;
-        }
-
-        .carousel-item {
-            height: 12em;
-            width: 100%;
-        }
-
-        .carousel-caption {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            left: 0;
-            right: unset;
-            padding: 10px;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            width: 100%;
-        }
-
-        .carousel-caption p:first-child {
-            word-spacing: .10em;
-            font-size: 1.5em;
-        }
-
-        .carousel-caption p:nth-child(2) {
-            word-spacing: .12em;
-            font-size: 1.5em;
-        }
-
-        .carousel-caption p,
-        .carousel-caption p a {
-            text-align: center;
-            color: white;
-            font-weight: 900;
-        }
-
-        .carousel-action-buttons {
-            position: relative;
-            width: 600px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            height: 19em;
-        }
-
-        .action-buttons {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-        }
-
-        .page-body {
-            background: -o-linear-gradient(75deg, rgba(34, 34, 34, 0.03) 0%, rgba(34, 34, 34, 0.03) 39%, rgba(197, 197, 197, 0.03) 39%, rgba(197, 197, 197, 0.03) 49%, rgba(244, 244, 244, 0.03) 49%, rgba(244, 244, 244, 0.03) 100%), -o-linear-gradient(186deg, rgba(57, 57, 57, 0.03) 0%, rgba(57, 57, 57, 0.03) 37%, rgba(230, 230, 230, 0.03) 37%, rgba(230, 230, 230, 0.03) 98%, rgba(224, 224, 224, 0.03) 98%, rgba(224, 224, 224, 0.03) 100%), -o-linear-gradient(left, rgb(255, 255, 255), rgb(255, 255, 255));
-            background: linear-gradient(15deg, rgba(34, 34, 34, 0.03) 0%, rgba(34, 34, 34, 0.03) 39%, rgba(197, 197, 197, 0.03) 39%, rgba(197, 197, 197, 0.03) 49%, rgba(244, 244, 244, 0.03) 49%, rgba(244, 244, 244, 0.03) 100%), linear-gradient(264deg, rgba(57, 57, 57, 0.03) 0%, rgba(57, 57, 57, 0.03) 37%, rgba(230, 230, 230, 0.03) 37%, rgba(230, 230, 230, 0.03) 98%, rgba(224, 224, 224, 0.03) 98%, rgba(224, 224, 224, 0.03) 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
-        }
-
-        .card {
-            width: 250px;
-            margin: 20px;
-            height: 400px;
-            cursor: pointer;
-        }
-
-        /* .card:hover {
-            -ms-transform: scale(1.5); 
-            -webkit-transform: scale(1.5);
-            transform: scale(1.5); 
-        } */
-
-        .img-top {
-            height: 200px;
-            width: auto;
-            padding: 10px;
-            margin: 0 auto;
-        }
-
-        .card-header {
-            font-size: 1.1em;
-        }
-
-        .truncate-header {
-            overflow: hidden;
-            -o-text-overflow: ellipsis;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-
-        }
-
-        .truncate-text {
-            -o-text-overflow: ellipsis;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-
-        }
-
-        .card-footer {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-            flex-direction: row;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-        }
-
-        .card-footer p {
-            margin: auto;
-        }
-
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (max-width: 1024px) {
-
-            .hero-image {
-                width: 431px;
-                background-position: center;
-            }
-        }
-
-        @media (max-width: 768px) {
-
-            .btn {
-                font-size: .7em;
-            }
-
-            .company-name {
-                font-size: .8em;
-            }
-
-            .company-name-subtext {
-                font-size: .75em;
-            }
-
-            .hero-image {
-                width: 300px;
-                background-position: center;
-            }
-
-            .carousel-caption p {
-                font-size: .9em;
-            }
-
-            .list-unstyled li {
-                font-size: .5em;
-            }
-
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-@media (max-width: 425px) {
-    .btn {
-        font-size: .5em;
-    }
-
-    /*made changes*/
-    .site-logo {
-        height: 50px;
-    }
-
-    .company-name {
-        font-size: .86em;
-    }
-
-    .carousel-action-buttons {
-        margin-top: auto;
-    }
-
-    .hero {
-        margin-top: 100px;
-    }
-
-    .hero-image {
-        width: 250px;
-        background-position: top;
-        right: 20%;
-        height: 100px;
-        top: 15%;
-
-    }
-
-    .card-footer {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-
-    }
-
-
-
-}
-
-@media (max-width: 375px) {
-    .btn {
-        font-size: .5em;
-    }
-
-    /*made changes*/
-    .site-logo {
-        height: 50px;
-    }
-
-    .company-name {
-        font-size: .52em;
-    }
-
-    .hero {
-        margin-top: 100px;
-    }
-
-    .hero-image {
-        width: 250px;
-        background-position: top;
-        right: 15%;
-        height: 100px;
-
-    }
-
-    .card-footer {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-
-    }
-
-}
-    </style>
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body data-gr-c-s-loaded="true">
@@ -441,7 +96,9 @@
             </div>
             <div class="hero-image"></div>
         </div>
-        <img class="hero-image-under" src="assets/images/hero-7-shape-light.png"/>
+        <img class="hero-image-under" src="assets/images/hero-7-shape-light.png" />
+        <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon"
+                src="https://raw.githubusercontent.com/solodev/scroll-down-anchor/master/images/arrow-down-1.png"></a>
     </div>
 
     <div class="page-body">
@@ -455,11 +112,12 @@
 
                 </div>
             </div>
-            <div class="d-flex flex-column-row flex-wrap justify-content-center p-lg-5 p-md-5 lead">
-                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead">
+            <div class="d-flex flex-column-row flex-wrap justify-content-center p-lg-5 p-md-5 lead" id="section2" >
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead" data-aos="fade-up">
                     <img src="assets/images/undraw_photocopy_gj0t.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0">
-                        <h4 class="my-0 truncate-header font-weight-normal" title="Print Result Slip">Print Result Slip</h4>
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Print Result Slip">Print Result Slip
+                        </h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
                         <p class="truncate-text">This allows candidates to request for printing of result slip</p>
@@ -469,10 +127,12 @@
                             href="#">Click to proceed</a>
                     </div>
                 </div>
-                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead lead" data-aos="fade-up">
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead lead"
+                    >
                     <img src="assets/images/undraw_blog_anyj.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0">
-                        <h4 class="my-0 truncate-header font-weight-normal" title="Admission Letter Printing">Admission Letter Printing
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Admission Letter Printing">Admission
+                            Letter Printing
                         </h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
@@ -484,14 +144,17 @@
                             href="#">Click to proceed</a>
                     </div>
                 </div>
-                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead lead" data-aos="fade-up">
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead lead"
+                    data-aos="fade-up">
                     <img src="assets/images/undraw_task_31wc.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0">
-                        <h4 class="my-0 truncate-header font-weight-normal" title="Change of Admission Letter">Change of Admission
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Change of Admission Letter">Change of
+                            Admission
                             Letter</h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p class="truncate-text">Candidates can print their admission letter for their institution/course of choice,
+                        <p class="truncate-text">Candidates can print their admission letter for their
+                            institution/course of choice,
                             which is now different from their course/institution offered initially. A new admission
                             letter can be printed after processing.</p>
                     </div>
@@ -500,13 +163,16 @@
                             href="#">Click to proceed</a>
                     </div>
                 </div>
-                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead lead" data-aos="fade-up">
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead lead"
+                    data-aos="fade-up">
                     <img src="assets/images/undraw_dev_productivity_umsq.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0 ">
-                        <h4 class="my-0 truncate-header font-weight-normal" title="Late Application">Late Application</h4>
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Late Application">Late Application
+                        </h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p class="truncate-text">Candidates can print their admission letter for their institution/course of choice,
+                        <p class="truncate-text">Candidates can print their admission letter for their
+                            institution/course of choice,
                             which is now different from their course/institution offered initially.
                             A new admission letter can be printed after processing.</p>
                     </div>
@@ -518,10 +184,12 @@
                 <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead" data-aos="fade-up">
                     <img src="assets/images/undraw_sync_files_xb3r.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0">
-                        <h4 class="my-0 truncate-header font-weight-normal" title="Check Admission Status">Check Admission Status</h4>
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Check Admission Status">Check
+                            Admission Status</h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p class="truncate-text">This allows candidates to check admission status. This is necessary before going ahead
+                        <p class="truncate-text">This allows candidates to check admission status. This is necessary
+                            before going ahead
                             to make payment for Admission Letter Printing. Payment is NOT required for this service.
                         </p>
                     </div>
@@ -538,7 +206,8 @@
                         </h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p class="truncate-text">Candidates can apply for correction of Names, Date of birth, State/Local Government and
+                        <p class="truncate-text">Candidates can apply for correction of Names, Date of birth,
+                            State/Local Government and
                             Gender. Payment is required for this service.
                         </p>
                     </div>
@@ -559,8 +228,10 @@
             </footer>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
@@ -569,77 +240,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        const cards = document.querySelectorAll('.card');
-
-        const showModal = (e,card="") => {
-            //debugger;
-            if (card === ""){
-                card = e.currentTarget;
-            }
-            const modalStart = `
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                </div>
-            </div>
-            `
-            const modalBody = Array.from(card.children);
-            card.innerHTML = modalStart;
-            modalBody.forEach(body=>card.querySelector('.modal-content').appendChild(body));
-            card.classList.add('modal', 'fade');
-            card.querySelector('.card-header').classList.add('modal-header');
-            card.querySelector('.card-body').classList.add('modal-body');
-            card.querySelector('.card-footer').classList.add('modal-footer');
-            card.classList.add('modal', 'fade');
-            card.classList.remove('card');
-            setAttributes(card ,{ "tabindex":"-1", "role":"dialog", "aria-labelledby":"exampleModalLabel", "aria-hidden":"true"})
-            const modalcard = $(card);
-            modalcard.modal('show');
-        }
-        const removeModal = (modal) => {
-            const cardChildren = Array.from(modal.querySelector('.modal-content').children);
-            modal.querySelector('.modal-dialog').remove();
-            cardChildren.forEach(body => modal.appendChild(body))
-            modal.classList.add('card');
-            modal.classList.remove('modal', 'fade');
-            modal.querySelector('.card-header').classList.remove('modal-header');
-            modal.querySelector('.card-body').classList.remove('modal-body');
-            modal.querySelector('.card-footer').classList.remove('modal-footer');
-            removeAttributes(modal, { "tabindex":"-1", "role":"dialog", "aria-labelledby":"exampleModalLabel", "aria-hidden":"true"})
-        }
-        function setAttributes(el, attrs) {
-            for(var key in attrs) {
-                el.setAttribute(key, attrs[key]);
-            }
-            }
-            function removeAttributes(el, attrs) {
-            for(var key in attrs) {
-                el.removeAttribute(key);
-            }
-            }
-        cards.forEach(card => card.addEventListener('click', showModal));
-        
-        $('.module').on('hidden.bs.modal', function (e) {
-            //debugger
-            removeModal(this);
-            this.addEventListener("click", showModal);
-            this.querySelector('.full-text').classList.add('truncate-text');
-            this.querySelector('.full-text').classList.remove('full-text');
-            this.querySelector('.full-header').classList.add('truncate-header');
-            this.querySelector('.full-header').classList.remove('full-header');
-        // do something...
-        });
-        $('.module').on('show.bs.modal', function (e) {
-            //debugger;
-            this.removeEventListener("click", showModal);
-            this.querySelector('.truncate-text').classList.add('full-text');
-            this.querySelector('.truncate-text').classList.remove('truncate-text');
-            this.querySelector('.truncate-header').classList.add('full-header');
-            this.querySelector('.truncate-header').classList.remove('truncate-header');
-  // do something...
-})
-    </script>
+    <script src="assets/js/scrpt.js"></script>
 </body>
 
 </html>
