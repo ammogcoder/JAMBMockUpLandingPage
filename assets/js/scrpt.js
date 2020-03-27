@@ -31,6 +31,7 @@ const showModal = (e, card = "") => {
     modalcard.modal('show');
 }
 const removeModal = (modal) => {
+    
     const cardChildren = Array.from(modal.querySelector('.modal-content').children);
     modal.querySelector('.modal-dialog').remove();
     cardChildren.forEach(body => modal.appendChild(body))
