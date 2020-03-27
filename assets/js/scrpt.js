@@ -8,6 +8,9 @@ const showModal = (e, card = "") => {
     }
     const modalStart = `
     <div class="modal-dialog" role="document">
+    <button type="button" class="border border-danger close font-weight-bold p-3 rounded-circle text-danger" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
         <div class="modal-content">
         </div>
     </div>
