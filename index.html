@@ -30,7 +30,7 @@
 
     <style>
         /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
+        
         .btn-small {
             font-size: .7em;
             padding: 0.6em;
@@ -183,7 +183,7 @@
             width: 250px;
             margin: 20px;
             height: 400px;
-
+            cursor: pointer;
         }
 
         /* .card:hover {
@@ -203,7 +203,7 @@
             font-size: 1.1em;
         }
 
-        .card-header * {
+        .truncate-header {
             overflow: hidden;
             -o-text-overflow: ellipsis;
             text-overflow: ellipsis;
@@ -211,7 +211,7 @@
 
         }
 
-        .card-body p {
+        .truncate-text {
             -o-text-overflow: ellipsis;
             text-overflow: ellipsis;
             display: -webkit-box;
@@ -456,27 +456,27 @@
                 </div>
             </div>
             <div class="d-flex flex-column-row flex-wrap justify-content-center p-lg-5 p-md-5 lead">
-                <div class="card d-flex justify-content-center hvr-grow mb-4 shadow lead">
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead">
                     <img src="assets/images/undraw_photocopy_gj0t.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0">
-                        <h4 class="my-0 font-weight-normal" title="Print Result Slip">Print Result Slip</h4>
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Print Result Slip">Print Result Slip</h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p>This allows candidates to request for printing of result slip</p>
+                        <p class="truncate-text">This allows candidates to request for printing of result slip</p>
                     </div>
                     <div class="card-footer py-0 bg-white border-top-0 d-flex justify-content-between">
                         <p class="text-muted">₦1000</p><a class="btn btn-small btn-outline-success btn-succes"
                             href="#">Click to proceed</a>
                     </div>
                 </div>
-                <div class="card d-flex justify-content-center hvr-grow mb-4 shadow lead lead" data-aos="fade-up">
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead lead" data-aos="fade-up">
                     <img src="assets/images/undraw_blog_anyj.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0">
-                        <h4 class="my-0 font-weight-normal" title="Admission Letter Printing">Admission Letter Printing
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Admission Letter Printing">Admission Letter Printing
                         </h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p>This allows candidates to print Admission letters.
+                        <p class="truncate-text">This allows candidates to print Admission letters.
                             Only candidates with admission will be able to use this service.</p>
                     </div>
                     <div class="card-footer py-0 bg-white border-top-0">
@@ -484,14 +484,14 @@
                             href="#">Click to proceed</a>
                     </div>
                 </div>
-                <div class="card d-flex justify-content-center hvr-grow mb-4 shadow lead lead" data-aos="fade-up">
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead lead" data-aos="fade-up">
                     <img src="assets/images/undraw_task_31wc.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0">
-                        <h4 class="my-0 font-weight-normal" title="Change of Admission Letter">Change of Admission
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Change of Admission Letter">Change of Admission
                             Letter</h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p>Candidates can print their admission letter for their institution/course of choice,
+                        <p class="truncate-text">Candidates can print their admission letter for their institution/course of choice,
                             which is now different from their course/institution offered initially. A new admission
                             letter can be printed after processing.</p>
                     </div>
@@ -500,13 +500,13 @@
                             href="#">Click to proceed</a>
                     </div>
                 </div>
-                <div class="card d-flex justify-content-center hvr-grow mb-4 shadow lead lead" data-aos="fade-up">
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead lead" data-aos="fade-up">
                     <img src="assets/images/undraw_dev_productivity_umsq.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0 ">
-                        <h4 class="my-0 font-weight-normal" title="Late Application">Late Application</h4>
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Late Application">Late Application</h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p>Candidates can print their admission letter for their institution/course of choice,
+                        <p class="truncate-text">Candidates can print their admission letter for their institution/course of choice,
                             which is now different from their course/institution offered initially.
                             A new admission letter can be printed after processing.</p>
                     </div>
@@ -515,13 +515,13 @@
                             href="#">Click to proceed</a>
                     </div>
                 </div>
-                <div class="card d-flex justify-content-center hvr-grow mb-4 shadow lead" data-aos="fade-up">
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead" data-aos="fade-up">
                     <img src="assets/images/undraw_sync_files_xb3r.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0">
-                        <h4 class="my-0 font-weight-normal" title="Check Admission Status">Check Admission Status</h4>
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Check Admission Status">Check Admission Status</h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p>This allows candidates to check admission status. This is necessary before going ahead
+                        <p class="truncate-text">This allows candidates to check admission status. This is necessary before going ahead
                             to make payment for Admission Letter Printing. Payment is NOT required for this service.
                         </p>
                     </div>
@@ -530,15 +530,15 @@
                             href="#">Click to proceed</a>
                     </div>
                 </div>
-                <div class="card d-flex justify-content-center hvr-grow mb-4 shadow lead" data-aos="fade-up">
+                <div class="card module d-flex justify-content-center hvr-grow mb-4 shadow lead" data-aos="fade-up">
                     <img src="assets/images/undraw_reviewed_docs_neeb.svg" class="card-img img-fluid img-top" alt="">
                     <div class="card-header py-0 bg-white border-bottom-0">
-                        <h4 class="my-0 font-weight-normal" title="Application for Correction of Data">
+                        <h4 class="my-0 truncate-header font-weight-normal" title="Application for Correction of Data">
                             Application for Correction of Data
                         </h4>
                     </div>
                     <div class="card-body py-0 d-flex flex-column">
-                        <p>Candidates can apply for correction of Names, Date of birth, State/Local Government and
+                        <p class="truncate-text">Candidates can apply for correction of Names, Date of birth, State/Local Government and
                             Gender. Payment is required for this service.
                         </p>
                     </div>
@@ -571,6 +571,74 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        const cards = document.querySelectorAll('.card');
+
+        const showModal = (e,card="") => {
+            //debugger;
+            if (card === ""){
+                card = e.currentTarget;
+            }
+            const modalStart = `
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                </div>
+            </div>
+            `
+            const modalBody = Array.from(card.children);
+            card.innerHTML = modalStart;
+            modalBody.forEach(body=>card.querySelector('.modal-content').appendChild(body));
+            card.classList.add('modal', 'fade');
+            card.querySelector('.card-header').classList.add('modal-header');
+            card.querySelector('.card-body').classList.add('modal-body');
+            card.querySelector('.card-footer').classList.add('modal-footer');
+            card.classList.add('modal', 'fade');
+            card.classList.remove('card');
+            setAttributes(card ,{ "tabindex":"-1", "role":"dialog", "aria-labelledby":"exampleModalLabel", "aria-hidden":"true"})
+            const modalcard = $(card);
+            modalcard.modal('show');
+        }
+        const removeModal = (modal) => {
+            const cardChildren = Array.from(modal.querySelector('.modal-content').children);
+            modal.querySelector('.modal-dialog').remove();
+            cardChildren.forEach(body => modal.appendChild(body))
+            modal.classList.add('card');
+            modal.classList.remove('modal', 'fade');
+            modal.querySelector('.card-header').classList.remove('modal-header');
+            modal.querySelector('.card-body').classList.remove('modal-body');
+            modal.querySelector('.card-footer').classList.remove('modal-footer');
+            removeAttributes(modal, { "tabindex":"-1", "role":"dialog", "aria-labelledby":"exampleModalLabel", "aria-hidden":"true"})
+        }
+        function setAttributes(el, attrs) {
+            for(var key in attrs) {
+                el.setAttribute(key, attrs[key]);
+            }
+            }
+            function removeAttributes(el, attrs) {
+            for(var key in attrs) {
+                el.removeAttribute(key);
+            }
+            }
+        cards.forEach(card => card.addEventListener('click', showModal));
+        
+        $('.module').on('hidden.bs.modal', function (e) {
+            //debugger
+            removeModal(this);
+            this.addEventListener("click", showModal);
+            this.querySelector('.full-text').classList.add('truncate-text');
+            this.querySelector('.full-text').classList.remove('full-text');
+            this.querySelector('.full-header').classList.add('truncate-header');
+            this.querySelector('.full-header').classList.remove('full-header');
+        // do something...
+        });
+        $('.module').on('show.bs.modal', function (e) {
+            //debugger;
+            this.removeEventListener("click", showModal);
+            this.querySelector('.truncate-text').classList.add('full-text');
+            this.querySelector('.truncate-text').classList.remove('truncate-text');
+            this.querySelector('.truncate-header').classList.add('full-header');
+            this.querySelector('.truncate-header').classList.remove('truncate-header');
+  // do something...
+})
     </script>
 </body>
 
