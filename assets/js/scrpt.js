@@ -116,7 +116,7 @@ function CreateCard(response){
     const CardBodyContent = CreateHTMLElement("p", {htmlclass:"truncate-text".split(" "), htmlattribute:{"title":ServiceDescription}});
     const ReadMore = CreateHTMLElement("P", {htmlclass:"nav-link read-more mb-0".split(" "), htmlattribute:{"title":"read more"}});
     const CardFooter = CreateHTMLElement("div", {htmlclass:"card-footer py-2 bg-white border-top-0".split(" ")});
-    const Price = CreateHTMLElement("p", {htmlclass:"text-muted".split(" ")});
+    const Price = CreateHTMLElement("p", {htmlclass:"text-muted font-weight-bold".split(" ")});
     const Click = CreateHTMLElement("a", {htmlclass:"btn btn-small btn-outline-success btn-succes".split(" "), htmlattribute:{"href":`${ServiceUrl}`}});
     
     Click.textContent = "click tp proceed"
