@@ -262,6 +262,10 @@
         font-size: .7em;
     }
 
+    .site-logo-company-name-company-name-subtext {
+        width: 3em !important;
+    }
+
     .company-name {
         font-size: .8em;
     }
