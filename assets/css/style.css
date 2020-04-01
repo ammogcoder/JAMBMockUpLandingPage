@@ -1,9 +1,4 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
-
-
-
-.btn-small {
+btn-small {
     font-size: .7em;
     padding: 0.6em;
     margin: .4em;
@@ -21,6 +16,7 @@
 
 .btn-outline-success {
     border-color: #1f6425;
+    color: #1f6425;
 }
 
 .brand {
@@ -93,6 +89,15 @@
     -webkit-transition: background-color 0.25s ease-in-out;
     -o-transition: background-color 0.25s ease-in-out;
     transition: background-color 0.25s ease-in-out;
+}
+
+.pulse {
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
 }
 
 .carousel {
@@ -233,6 +238,8 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card-footer p {
@@ -253,11 +260,13 @@
         width: 400px;
     }
 }
+
 @media (max-width: 1440px) {
     .card {
         width: 260px;
     }
 }
+
 @media (max-width: 1024px) {
 
     .hero-image {
@@ -295,7 +304,7 @@
     .ct-btn-scroll .ct-js-btn-scroll img {
         width: 40px;
         height: 40px;
-        
+
     }
 
     .hero-image {
@@ -334,11 +343,11 @@
         margin-top: auto;
     }
 
-    .ct-btn-scroll .ct-js-btn-scroll {
+    .ct-btn-scroll {
         bottom: 20px;
     }
 
-    .ct-btn-scroll .ct-js-btn-scroll img {
+    .ct-btn-scroll img {
         height: 30px;
         width: 30px;
     }
@@ -386,7 +395,7 @@
     }
 
     .hero {
-        margin-top: 100px;
+        margin-top: 62px;
     }
 
     .hero-image {
@@ -408,4 +417,36 @@
 
     }
 
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        padding: 0%;
+    }
+
+    70% {
+        padding: 3%;
+
+    }
+
+    100% {
+        padding: 6%;
+
+    }
+}
+
+@keyframes pulse {
+    0% {
+        padding: 0%;
+    }
+
+    70% {
+        padding: 3%;
+
+    }
+
+    100% {
+        padding: 6%;
+
+    }
 }
