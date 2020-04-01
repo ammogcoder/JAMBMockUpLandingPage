@@ -2,11 +2,13 @@ AOS.init();
 let cards = document.querySelectorAll('.card');
 const section = document.querySelector('#section2');
 
-const showModal = (e, card = "") => {
-    //debugger;
+const showModal = (e, card="") => {
+    debugger;
     if (card === "") {
-        card = e.currentTarget;
+        card = e.currentTarget.parentElement.parentElement;
     }
+    else
+    e.preventDefault();
     
     const modalDialog = CreateHTMLElement("div",{htmlclass:"modal-dialog".split(" "), htmlattribute:{"role":"document"}})
     const closeButton = CreateHTMLElement("button",{htmlclass:"bg-danger border border-danger close font-weight-bold p-3 rounded-circle text-white".split(" "), htmlattribute:{"data-dismiss":"modal", "aria-label":"Close"}})
@@ -82,6 +84,25 @@ fetch("assets/JSON/postregfac.json").then((response) => {
 })
     .then((data) => {
         data.forEach(CreateCard)
+        document.querySelectorAll('.read-more').forEach(val => val.addEventListener('click', showModal));
+    $('.module').on('hidden.bs.modal', function (e) {
+        //debugger
+        removeModal(this);
+        this.querySelector('.full-text').classList.add('truncate-text');
+        this.querySelector('.full-text').classList.remove('full-text');
+        this.querySelector('.full-header').classList.add('truncate-header');
+        this.querySelector('.full-header').classList.remove('full-header');
+        // do something...
+    });
+    $('.module').on('show.bs.modal', function (e) {
+        debugger;
+        this.querySelector('.read-less').removeEventListener("click", showModal)
+        this.querySelector('.truncate-text').classList.add('full-text');
+        this.querySelector('.truncate-text').classList.remove('truncate-text');
+        this.querySelector('.truncate-header').classList.add('full-header');
+        this.querySelector('.truncate-header').classList.remove('truncate-header');
+        // do something...
+    });
     });
 
 
@@ -104,7 +125,7 @@ function CreateHTMLElement(HTMLElement, {htmlclass: [...classes], htmlattribute:
     return element;
 }
 
-function CreateCard(response){
+const CreateCard = function (response){
     //debugger;
     const {ServiceImage, ServiceTitle, ServiceDescription, ServicePrice, ServiceUrl="#"} = response;
     const Card = CreateHTMLElement("div", {htmlclass:"card module d-flex justify-content-center hvr-grow mb-4 shadow lead".split(" "),
@@ -138,24 +159,5 @@ function CreateCard(response){
     Card.appendChild(CardFooter);
     cards = document.querySelectorAll('.card');
     section.append(Card);
-    Card.addEventListener('click', showModal)
-    $(Card).on('hidden.bs.modal', function (e) {
-        //debugger
-        removeModal(this);
-        this.addEventListener("click", showModal);
-        this.querySelector('.full-text').classList.add('truncate-text');
-        this.querySelector('.full-text').classList.remove('full-text');
-        this.querySelector('.full-header').classList.add('truncate-header');
-        this.querySelector('.full-header').classList.remove('full-header');
-        // do something...
-    });
-    $(Card).on('show.bs.modal', function (e) {
-        debugger;
-        this.removeEventListener("click", showModal);
-        this.querySelector('.truncate-text').classList.add('full-text');
-        this.querySelector('.truncate-text').classList.remove('truncate-text');
-        this.querySelector('.truncate-header').classList.add('full-header');
-        this.querySelector('.truncate-header').classList.remove('truncate-header');
-        // do something...
-    });
+    
 }

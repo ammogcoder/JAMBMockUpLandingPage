@@ -7,16 +7,16 @@ btn-small {
 
 .btn-success,
 .btn-outline-success:hover {
-    background-color: #1f6425;
+    background-color: #537d57;
 }
 
 .text-success {
-    color: #1f6425;
+    color: #537d57;
 }
 
 .btn-outline-success {
-    border-color: #1f6425;
-    color: #1f6425;
+    border-color: #537d57;
+    color: #537d57;
 }
 
 .brand {
@@ -178,6 +178,9 @@ btn-small {
     width: 250px;
     margin: 20px;
     height: 400px;
+}
+
+.read-more, .read-less {
     cursor: pointer;
 }
 
