@@ -1,0 +1,99 @@
+[{
+    "ServiceTitle":"Print Result Slip",
+    "ServiceDescription":"This allows candidates to request for printing of result slip",
+    "ServicePrice": "₦1000",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#"
+
+},{
+    "ServiceTitle":"Admission Letter Printing",
+    "ServiceDescription":"This allows candidates to print Admission letters. Only candidates with admission will be able to use this service.",
+    "ServicePrice": "₦1000",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#"
+
+},{
+"ServiceTitle":"Correction of Data",
+    "ServiceDescription":"Candidates can apply for correction of Names, Date of birth, State/Local Government and Gender. Payment is required for this service.",
+    "ServicePrice": "Varies",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#",
+    "sub":[
+        {
+            "ServiceTitle":"Change of Course/Institution",
+            "ServiceDescription":"",
+            "ServicePrice": "₦2500"
+        
+        },{
+            "ServiceTitle":"Change of Names",
+            "ServiceDescription":"",
+            "ServicePrice": "₦2500"
+        
+        },{
+            "ServiceTitle":"Change of Date of Birth",
+            "ServiceDescription":"",
+            "ServicePrice": "₦2500"
+        
+        },{
+            "ServiceTitle":"Change of Gender",
+            "ServiceDescription":"",
+            "ServicePrice": "₦2500"
+        
+        },{
+            "ServiceTitle":"Change of State/LGA",
+            "ServiceDescription":"",
+            "ServicePrice": "₦2500"
+        
+        }
+    ]
+
+},{
+    "ServiceTitle":"Condonement of Illegitimate Admission",
+    "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing.",
+    "ServicePrice": "₦10000",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#"
+
+},{
+    "ServiceTitle":"Application For Change Admission Letter",
+    "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing.",
+    "ServicePrice": "₦5000",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#"
+
+},{
+    "ServiceTitle":"Retrieval of Registration Number",
+    "ServiceDescription":"Did you forget your Registration Number? Use this service to recover it",
+    "ServicePrice": "₦1000",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#"
+
+},{
+    "ServiceTitle":"Condonement of Illegitimate Admission (with Reg. Number) ",
+    "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing. You must remember your Reg. Number to use this service",
+    "ServicePrice": "₦5000",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#"
+
+},{
+    "ServiceTitle":"Inter University Transfer (From  Foreign Universities)  ",
+    "ServiceDescription":"This service allows candidates from foreign Institutions transfer their admission into a Nigerian Institution",
+    "ServicePrice": "₦7000",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#"
+
+},{
+    "ServiceTitle":"Inter University Transfer (Local within Nigeria)",
+    "ServiceDescription":"This service allows candidates move from one Institution to another within Nigeria",
+    "ServicePrice": "₦7000",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#"
+
+},{
+    "ServiceTitle":"Check Admission Status",
+    "ServiceDescription":"This allows candidates to check admission status. This is necessarybefore going ahead to make payment for Admission Letter Printing. Payment is NOT required for this service.",
+    "ServicePrice": "Free",
+    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceUrl":"#"
+
+}]
