@@ -3,7 +3,7 @@
     "ServiceDescription":"This allows candidates to request for printing of result slip",
     "ServicePrice": "₦1,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
-    "ServiceUrl":"#"
+    "ServiceUrl":"https://jamb.org.ng/printslip.htm"
 
 },{
     "ServiceTitle":"Admission Letter Printing",
