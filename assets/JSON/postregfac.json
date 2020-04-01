@@ -1,14 +1,14 @@
 [{
     "ServiceTitle":"Print Result Slip",
     "ServiceDescription":"This allows candidates to request for printing of result slip",
-    "ServicePrice": "₦1000",
+    "ServicePrice": "₦1,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
     "ServiceUrl":"#"
 
 },{
     "ServiceTitle":"Admission Letter Printing",
     "ServiceDescription":"This allows candidates to print Admission letters. Only candidates with admission will be able to use this service.",
-    "ServicePrice": "₦1000",
+    "ServicePrice": "₦1,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
     "ServiceUrl":"#"
 
@@ -22,22 +22,22 @@
         {
             "ServiceTitle":"Change of Course/Institution",
             "ServiceDescription":"",
-            "ServicePrice": "₦2500"
+            "ServicePrice": "₦2,500"
         
         },{
             "ServiceTitle":"Change of Names",
             "ServiceDescription":"",
-            "ServicePrice": "₦2500"
+            "ServicePrice": "₦2,500"
         
         },{
             "ServiceTitle":"Change of Date of Birth",
             "ServiceDescription":"",
-            "ServicePrice": "₦2500"
+            "ServicePrice": "₦2,500"
         
         },{
             "ServiceTitle":"Change of Gender",
             "ServiceDescription":"",
-            "ServicePrice": "₦2500"
+            "ServicePrice": "₦2,500"
         
         },{
             "ServiceTitle":"Change of State/LGA",
@@ -50,42 +50,42 @@
 },{
     "ServiceTitle":"Condonement of Illegitimate Admission",
     "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing.",
-    "ServicePrice": "₦10000",
+    "ServicePrice": "₦10,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
     "ServiceUrl":"#"
 
 },{
     "ServiceTitle":"Application For Change Admission Letter",
     "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing.",
-    "ServicePrice": "₦5000",
+    "ServicePrice": "₦5,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
     "ServiceUrl":"#"
 
 },{
     "ServiceTitle":"Retrieval of Registration Number",
     "ServiceDescription":"Did you forget your Registration Number? Use this service to recover it",
-    "ServicePrice": "₦1000",
+    "ServicePrice": "₦1,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
     "ServiceUrl":"#"
 
 },{
     "ServiceTitle":"Condonement of Illegitimate Admission (with Reg. Number) ",
     "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing. You must remember your Reg. Number to use this service",
-    "ServicePrice": "₦5000",
+    "ServicePrice": "₦5,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
     "ServiceUrl":"#"
 
 },{
     "ServiceTitle":"Inter University Transfer (From  Foreign Universities)  ",
     "ServiceDescription":"This service allows candidates from foreign Institutions transfer their admission into a Nigerian Institution",
-    "ServicePrice": "₦7000",
+    "ServicePrice": "₦7,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
     "ServiceUrl":"#"
 
 },{
     "ServiceTitle":"Inter University Transfer (Local within Nigeria)",
     "ServiceDescription":"This service allows candidates move from one Institution to another within Nigeria",
-    "ServicePrice": "₦7000",
+    "ServicePrice": "₦7,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
     "ServiceUrl":"#"
 
