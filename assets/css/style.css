@@ -324,11 +324,11 @@
         margin-top: auto;
     }
 
-    .ct-btn-scroll .ct-js-btn-scroll {
+    .ct-btn-scroll {
         bottom: 20px;
     }
 
-    .ct-btn-scroll .ct-js-btn-scroll img {
+    .ct-btn-scroll img {
         height: 30px;
         width: 30px;
     }
