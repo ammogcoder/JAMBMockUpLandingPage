@@ -119,7 +119,7 @@ function CreateCard(response){
     const Price = CreateHTMLElement("p", {htmlclass:"text-muted font-weight-bold".split(" ")});
     const Click = CreateHTMLElement("a", {htmlclass:"btn btn-small btn-outline-success btn-succes".split(" "), htmlattribute:{"href":`${ServiceUrl}`,"target":"_blank"}});
     
-    Click.textContent = "click t0 proceed"
+    Click.textContent = "click to proceed"
     CardBodyContent.textContent = ServiceDescription;
     ReadMore.textContent = "read more";
     Price.textContent = ServicePrice;
