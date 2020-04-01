@@ -16,7 +16,7 @@
 "ServiceTitle":"Correction of Data",
     "ServiceDescription":"Candidates can apply for correction of Names, Date of birth, State/Local Government and Gender. Payment is required for this service.",
     "ServicePrice": "Varies",
-    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceImage": "assets/images/undraw_task_31wc.svg",
     "ServiceUrl":"#",
     "sub":[
         {
@@ -93,7 +93,7 @@
     "ServiceTitle":"Check Admission Status",
     "ServiceDescription":"This allows candidates to check admission status. This is necessarybefore going ahead to make payment for Admission Letter Printing. Payment is NOT required for this service.",
     "ServicePrice": "Free",
-    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceImage": "assets/images/undraw_sync_files_xb3r.svg",
     "ServiceUrl":"#"
 
 }]
