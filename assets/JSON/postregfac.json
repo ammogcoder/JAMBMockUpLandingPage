@@ -17,7 +17,7 @@
     "ServiceDescription":"Candidates can apply for correction of Names, Date of birth, State/Local Government and Gender. Payment is required for this service.",
     "ServicePrice": "Varies",
     "ServiceImage": "assets/images/undraw_task_31wc.svg",
-    "ServiceUrl":"#",
+    "ServiceUrl":"https://jamb.org.ng/correction.htm",
     "sub":[
         {
             "ServiceTitle":"Change of Course/Institution",
