@@ -65,28 +65,28 @@
     "ServiceTitle":"Retrieval of Registration Number",
     "ServiceDescription":"Did you forget your Registration Number? Use this service to recover it",
     "ServicePrice": "₦1,000",
-    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceImage": "assets/images/undraw_blog_anyj.svg",
     "ServiceUrl":"#"
 
 },{
     "ServiceTitle":"Condonement of Illegitimate Admission (with Reg. Number) ",
     "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing. You must remember your Reg. Number to use this service",
     "ServicePrice": "₦5,000",
-    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceImage": "assets/images/undraw_blog_anyj.svg",
     "ServiceUrl":"#"
 
 },{
     "ServiceTitle":"Inter University Transfer (From  Foreign Universities)  ",
     "ServiceDescription":"This service allows candidates from foreign Institutions transfer their admission into a Nigerian Institution",
     "ServicePrice": "₦7,000",
-    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceImage": "assets/images/undraw_blog_anyj.svg",
     "ServiceUrl":"#"
 
 },{
     "ServiceTitle":"Inter University Transfer (Local within Nigeria)",
     "ServiceDescription":"This service allows candidates move from one Institution to another within Nigeria",
     "ServicePrice": "₦7,000",
-    "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
+    "ServiceImage": "assets/images/undraw_blog_anyj.svg",
     "ServiceUrl":"#"
 
 },{

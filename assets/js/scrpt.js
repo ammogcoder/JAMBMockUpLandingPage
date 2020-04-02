@@ -2,19 +2,36 @@ AOS.init();
 let cards = document.querySelectorAll('.card');
 const section = document.querySelector('#section2');
 
-const showModal = (e, card="") => {
+const showModal = (e, card = "") => {
     debugger;
     if (card === "") {
         card = e.currentTarget.parentElement.parentElement;
-    }
-    else
-    e.preventDefault();
-    
-    const modalDialog = CreateHTMLElement("div",{htmlclass:"modal-dialog".split(" "), htmlattribute:{"role":"document"}})
-    const closeButton = CreateHTMLElement("button",{htmlclass:"bg-danger border border-danger close font-weight-bold p-3 rounded-circle text-white".split(" "), htmlattribute:{"data-dismiss":"modal", "aria-label":"Close"}})
-    const spanX = CreateHTMLElement("span",{htmlclass:[], htmlattribute:{"aria-hidden":"true"}});
-    const modalContent = CreateHTMLElement("div",{htmlclass:"modal-content".split(" ")});
-    
+    } else
+        e.preventDefault();
+
+    const modalDialog = CreateHTMLElement("div", {
+        htmlclass: "modal-dialog".split(" "),
+        htmlattribute: {
+            "role": "document"
+        }
+    })
+    const closeButton = CreateHTMLElement("button", {
+        htmlclass: "bg-danger border border-danger close font-weight-bold p-3 rounded-circle text-white".split(" "),
+        htmlattribute: {
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+        }
+    })
+    const spanX = CreateHTMLElement("span", {
+        htmlclass: [],
+        htmlattribute: {
+            "aria-hidden": "true"
+        }
+    });
+    const modalContent = CreateHTMLElement("div", {
+        htmlclass: "modal-content".split(" ")
+    });
+
     spanX.textContent = "x"
 
     closeButton.append(spanX);
@@ -22,7 +39,7 @@ const showModal = (e, card="") => {
     modalDialog.append(modalContent);
 
     const modalBody = Array.from(card.children);
-    while(card.firstChild){
+    while (card.firstChild) {
         card.removeChild(card.firstChild);
     }
 
@@ -42,15 +59,18 @@ const showModal = (e, card="") => {
     })
     const readMore = card.querySelector(".read-more");
     readMore.textContent = "read less";
-    setAttributes(readMore, {"data-dismiss":"modal", "aria-label":"Close"});
+    setAttributes(readMore, {
+        "data-dismiss": "modal",
+        "aria-label": "Close"
+    });
     readMore.classList.add("read-less");
     readMore.classList.remove("read-more");
-    
+
     const modalcard = $(card);
     modalcard.modal('show');
 }
 const removeModal = (modal) => {
-    
+
     const cardChildren = Array.from(modal.querySelector('.modal-content').children);
     modal.querySelector('.modal-dialog').remove();
     cardChildren.forEach(body => modal.appendChild(body))
@@ -59,10 +79,10 @@ const removeModal = (modal) => {
     modal.querySelector('.card-header').classList.remove('modal-header');
     modal.querySelector('.card-body').classList.remove('modal-body');
     modal.querySelector('.card-footer').classList.remove('modal-footer');
-    removeAttributes(modal, ["tabindex", "role", "aria-labelledby","aria-hidden"]);
-    const readLess= modal.querySelector(".read-less");
+    removeAttributes(modal, ["tabindex", "role", "aria-labelledby", "aria-hidden"]);
+    const readLess = modal.querySelector(".read-less");
     readLess.textContent = "read more";
-    removeAttributes(readLess, ["data-dismiss","aria-label"]);
+    removeAttributes(readLess, ["data-dismiss", "aria-label"]);
     readLess.classList.add("read-more");
     readLess.classList.remove("read-less");
 }
@@ -74,90 +94,138 @@ function setAttributes(el, attrs) {
 }
 
 function removeAttributes(el, ...attrs) {
-    attrs.forEach(key=>el.removeAttribute(key));
+    attrs.forEach(key => el.removeAttribute(key));
 }
 
 
 fetch("assets/JSON/postregfac.json").then((response) => {
-    console.log(response);
-    return response.json();
-})
+        console.log(response);
+        return response.json();
+    })
     .then((data) => {
         data.forEach(CreateCard)
         document.querySelectorAll('.read-more').forEach(val => val.addEventListener('click', showModal));
-    $('.module').on('hidden.bs.modal', function (e) {
-        //debugger
-        removeModal(this);
-        this.querySelector('.full-text').classList.add('truncate-text');
-        this.querySelector('.full-text').classList.remove('full-text');
-        this.querySelector('.full-header').classList.add('truncate-header');
-        this.querySelector('.full-header').classList.remove('full-header');
-        // do something...
-    });
-    $('.module').on('show.bs.modal', function (e) {
-        debugger;
-        this.querySelector('.read-less').removeEventListener("click", showModal)
-        this.querySelector('.truncate-text').classList.add('full-text');
-        this.querySelector('.truncate-text').classList.remove('truncate-text');
-        this.querySelector('.truncate-header').classList.add('full-header');
-        this.querySelector('.truncate-header').classList.remove('truncate-header');
-        // do something...
-    });
+        $('.module').on('hidden.bs.modal', function (e) {
+            //debugger
+            removeModal(this);
+            this.querySelector('.full-text').classList.add('truncate-text');
+            this.querySelector('.full-text').classList.remove('full-text');
+            this.querySelector('.full-header').classList.add('truncate-header');
+            this.querySelector('.full-header').classList.remove('full-header');
+            // do something...
+        });
+        $('.module').on('show.bs.modal', function (e) {
+            debugger;
+            this.querySelector('.read-less').removeEventListener("click", showModal)
+            this.querySelector('.truncate-text').classList.add('full-text');
+            this.querySelector('.truncate-text').classList.remove('truncate-text');
+            this.querySelector('.truncate-header').classList.add('full-header');
+            this.querySelector('.truncate-header').classList.remove('truncate-header');
+            // do something...
+        });
     });
 
 
-   
-    $(".ct-btn-scroll").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function () {
-                window.location.hash = hash;
-            });
-        }
-    });
-function CreateHTMLElement(HTMLElement, {htmlclass: [...classes], htmlattribute:attr} = {}) {
+
+$(".ct-btn-scroll").on('click', function (event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function () {
+            window.location.hash = hash;
+        });
+    }
+});
+
+function CreateHTMLElement(HTMLElement, {
+    htmlclass: [...classes],
+    htmlattribute: attr
+} = {}) {
     const element = document.createElement(HTMLElement);
-    classes.length > 0 ? classes.forEach(val => element.classList.add(val)): "";
-    typeof attr !== "undefined"? setAttributes(element, attr):"";
+    classes.length > 0 ? classes.forEach(val => element.classList.add(val)) : "";
+    typeof attr !== "undefined" ? setAttributes(element, attr) : "";
     return element;
 }
 
-const CreateCard = function (response){
+const CreateCard = function (response) {
     //debugger;
-    const {ServiceImage, ServiceTitle, ServiceDescription, ServicePrice, ServiceUrl="#"} = response;
-    const Card = CreateHTMLElement("div", {htmlclass:"card module d-flex justify-content-center hvr-grow mb-4 shadow lead".split(" "),
-    htmlattribute:{"data-aos":"fade-up"}});
-    const Image = CreateHTMLElement("IMG", {htmlclass:"card-img img-fluid img-top".split(" "), htmlattribute: {src:ServiceImage}});
-    const CardHeader = CreateHTMLElement("div", {htmlclass:"card-header py-0 bg-white border-bottom-0".split(" ")});
-    const cardTitle = CreateHTMLElement("div", {htmlclass:"my-0 truncate-header font-weight-normal".split(" "), htmlattribute:{"title":ServiceTitle}});
-    const CardBody = CreateHTMLElement("div", {htmlclass:"card-body py-0 d-flex flex-column".split(" "), });
-    const CardBodyContent = CreateHTMLElement("p", {htmlclass:"truncate-text".split(" "), htmlattribute:{"title":ServiceDescription}});
-    const ReadMore = CreateHTMLElement("P", {htmlclass:"nav-link read-more mb-0".split(" "), htmlattribute:{"title":"read more"}});
-    const CardFooter = CreateHTMLElement("div", {htmlclass:"card-footer py-2 bg-white border-top-0".split(" ")});
-    const Price = CreateHTMLElement("p", {htmlclass:"text-muted font-weight-bold".split(" ")});
-    const Click = CreateHTMLElement("a", {htmlclass:"nav-link text-success p-0".split(" "), htmlattribute:{"href":`${ServiceUrl}`,"target":"_blank"}});
-    
+    const {
+        ServiceImage,
+        ServiceTitle,
+        ServiceDescription,
+        ServicePrice,
+        ServiceUrl = "#"
+    } = response;
+    const Card = CreateHTMLElement("div", {
+        htmlclass: "card module d-flex justify-content-center hvr-grow mb-4 shadow lead".split(" "),
+        htmlattribute: {
+            "data-aos": "fade-up"
+        }
+    });
+    const Image = CreateHTMLElement("IMG", {
+        htmlclass: "card-img img-fluid img-top".split(" "),
+        htmlattribute: {
+            src: ServiceImage
+        }
+    });
+    const CardHeader = CreateHTMLElement("div", {
+        htmlclass: "card-header py-0 bg-white border-bottom-0".split(" ")
+    });
+    const cardTitle = CreateHTMLElement("div", {
+        htmlclass: "my-0 truncate-header font-weight-normal".split(" "),
+        htmlattribute: {
+            "title": ServiceTitle
+        }
+    });
+    const CardBody = CreateHTMLElement("div", {
+        htmlclass: "card-body py-0 d-flex flex-column".split(" "),
+    });
+    const CardBodyContent = CreateHTMLElement("p", {
+        htmlclass: "truncate-text".split(" "),
+        htmlattribute: {
+            "title": ServiceDescription
+        }
+    });
+    const ReadMore = CreateHTMLElement("P", {
+        htmlclass: "nav-link read-more mb-0".split(" "),
+        htmlattribute: {
+            "title": "read more"
+        }
+    });
+    const CardFooter = CreateHTMLElement("div", {
+        htmlclass: "card-footer py-2 bg-white border-top-0".split(" ")
+    });
+    const Price = CreateHTMLElement("p", {
+        htmlclass: "text-muted font-weight-bold".split(" ")
+    });
+    const Click = CreateHTMLElement("a", {
+        htmlclass: "nav-link text-success p-0".split(" "),
+        htmlattribute: {
+            "href": `${ServiceUrl}`,
+            "target": "_blank"
+        }
+    });
+
     Click.textContent = "click to proceed"
     CardBodyContent.textContent = ServiceDescription;
     ReadMore.textContent = "read more";
     Price.textContent = ServicePrice;
     cardTitle.textContent = ServiceTitle;
-    
+
     CardFooter.appendChild(Price);
     CardFooter.appendChild(Click);
-    
+
     CardBody.appendChild(CardBodyContent);
     CardBody.appendChild(ReadMore);
     CardHeader.appendChild(cardTitle);
-    
+
     Card.appendChild(Image);
     Card.appendChild(CardHeader);
     Card.appendChild(CardBody);
     Card.appendChild(CardFooter);
     cards = document.querySelectorAll('.card');
     section.append(Card);
-    
+
 }
