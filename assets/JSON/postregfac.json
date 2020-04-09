@@ -66,11 +66,12 @@
     "Sub":[]
 
 },{
+    
     "ServiceTitle":"Retrieval of Registration Number",
     "ServiceDescription":"Did you forget your Registration Number? Use this service to recover it",
     "ServicePrice": "₦1,000",
     "ServiceImage": "assets/images/undraw_blog_anyj.svg",
-    "ServiceUrl":"#",
+    "ServiceUrl":"https://jamb.org.ng/retrieveRegNo.htm",
     "Sub":[]
 
 },{
