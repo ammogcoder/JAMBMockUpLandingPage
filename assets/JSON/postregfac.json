@@ -3,14 +3,16 @@
     "ServiceDescription":"This allows candidates to request for printing of result slip",
     "ServicePrice": "₦1,000",
     "ServiceImage": "assets/images/undraw_photocopy_gj0t.svg",
-    "ServiceUrl":"https://jamb.org.ng/printslip.htm"
+    "ServiceUrl":"https://jamb.org.ng/printslip.htm",
+    "Sub":[]
 
 },{
     "ServiceTitle":"Admission Letter Printing",
     "ServiceDescription":"This allows candidates to print Admission letters. Only candidates with admission will be able to use this service.",
     "ServicePrice": "₦1,000",
     "ServiceImage": "assets/images/undraw_blog_anyj.svg",
-    "ServiceUrl":"https://jamb.org.ng/adminprinting.htm"
+    "ServiceUrl":"https://jamb.org.ng/adminprinting.htm",
+    "Sub":[]
 
 },{
 "ServiceTitle":"Correction of Data",
@@ -18,7 +20,7 @@
     "ServicePrice": "Varies",
     "ServiceImage": "assets/images/undraw_task_31wc.svg",
     "ServiceUrl":"https://jamb.org.ng/correction.htm",
-    "sub":[
+    "Subs":[
         {
             "ServiceTitle":"Change of Course/Institution",
             "ServiceDescription":"",
@@ -52,48 +54,54 @@
     "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing.",
     "ServicePrice": "₦10,000",
     "ServiceImage": "assets/images/undraw_dev_productivity_umsq.svg",
-    "ServiceUrl":"https://jamb.org.ng/lateapp.htm"
+    "ServiceUrl":"https://jamb.org.ng/condonementIllegitimateAdm.htm",
+    "Sub":[]
 
 },{
     "ServiceTitle":"Application For Change Admission Letter",
     "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing.",
     "ServicePrice": "₦5,000",
     "ServiceImage": "assets/images/undraw_blog_anyj.svg",
-    "ServiceUrl":"https://jamb.org.ng/changeadmin.htm"
+    "ServiceUrl":"https://jamb.org.ng/changeadmin.htm",
+    "Sub":[]
 
 },{
     "ServiceTitle":"Retrieval of Registration Number",
     "ServiceDescription":"Did you forget your Registration Number? Use this service to recover it",
     "ServicePrice": "₦1,000",
     "ServiceImage": "assets/images/undraw_blog_anyj.svg",
-    "ServiceUrl":"#"
+    "ServiceUrl":"#",
+    "Sub":[]
 
 },{
     "ServiceTitle":"Condonement of Illegitimate Admission (with Reg. Number) ",
     "ServiceDescription":"Candidates can print their admission letter for their institution/course of choice, which is now different from their course/institution offered initially. A new admission letter can be printed after processing. You must remember your Reg. Number to use this service",
     "ServicePrice": "₦5,000",
     "ServiceImage": "assets/images/undraw_blog_anyj.svg",
-    "ServiceUrl":"#"
+    "ServiceUrl":"https://jamb.org.ng/condonementIllegitimateAdmRegno.htm",
+    "Sub":[]
 
 },{
     "ServiceTitle":"Inter University Transfer (From  Foreign Universities)  ",
     "ServiceDescription":"This service allows candidates from foreign Institutions transfer their admission into a Nigerian Institution",
     "ServicePrice": "₦7,000",
     "ServiceImage": "assets/images/undraw_blog_anyj.svg",
-    "ServiceUrl":"#"
+    "ServiceUrl":"https://jamb.org.ng/interUniTransferForeign.htm",
+    "Sub":[]
 
 },{
     "ServiceTitle":"Inter University Transfer (Local within Nigeria)",
     "ServiceDescription":"This service allows candidates move from one Institution to another within Nigeria",
     "ServicePrice": "₦7,000",
     "ServiceImage": "assets/images/undraw_blog_anyj.svg",
-    "ServiceUrl":"#"
+    "ServiceUrl":"https://jamb.org.ng/interUniTransferLocal.htm",
+    "Sub":[]
 
 },{
     "ServiceTitle":"Check Admission Status",
     "ServiceDescription":"This allows candidates to check admission status. This is necessarybefore going ahead to make payment for Admission Letter Printing. Payment is NOT required for this service.",
     "ServicePrice": "Free",
     "ServiceImage": "assets/images/undraw_sync_files_xb3r.svg",
-    "ServiceUrl":"http://www.jamb.org.ng/efacility"
-
+    "ServiceUrl":"http://www.jamb.org.ng/efacility",
+    "Sub":[]
 }]

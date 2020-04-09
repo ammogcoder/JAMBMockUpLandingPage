@@ -1,9 +1,8 @@
 AOS.init();
-let cards = document.querySelectorAll('.card');
 const section = document.querySelector('#section2');
 
 const showModal = (e, card = "") => {
-    debugger;
+    //debugger;
     if (card === "") {
         card = e.currentTarget.parentElement.parentElement;
     } else
@@ -15,6 +14,7 @@ const showModal = (e, card = "") => {
             "role": "document"
         }
     })
+
     const closeButton = CreateHTMLElement("button", {
         htmlclass: "bg-danger border border-danger close font-weight-bold p-3 rounded-circle text-white".split(" "),
         htmlattribute: {
@@ -22,12 +22,14 @@ const showModal = (e, card = "") => {
             "aria-label": "Close"
         }
     })
+
     const spanX = CreateHTMLElement("span", {
         htmlclass: [],
         htmlattribute: {
             "aria-hidden": "true"
         }
     });
+
     const modalContent = CreateHTMLElement("div", {
         htmlclass: "modal-content".split(" ")
     });
@@ -51,18 +53,22 @@ const showModal = (e, card = "") => {
     card.querySelector('.card-footer').classList.add('modal-footer');
     card.classList.add('modal', 'fade');
     card.classList.remove('card');
+    
     setAttributes(card, {
         "tabindex": "-1",
         "role": "dialog",
         "aria-labelledby": "exampleModalLabel",
         "aria-hidden": "true"
     })
+    
     const readMore = card.querySelector(".read-more");
     readMore.textContent = "read less";
+    
     setAttributes(readMore, {
         "data-dismiss": "modal",
         "aria-label": "Close"
     });
+    
     readMore.classList.add("read-less");
     readMore.classList.remove("read-more");
 
@@ -87,45 +93,50 @@ const removeModal = (modal) => {
     readLess.classList.remove("read-less");
 }
 
-function setAttributes(el, attrs) {
+const setAttributes = (el, attrs) => {
     for (var key in attrs) {
         el.setAttribute(key, attrs[key]);
     }
 }
 
-function removeAttributes(el, ...attrs) {
+const removeAttributes = (el, ...attrs) => {
     attrs.forEach(key => el.removeAttribute(key));
+}
+let Services;
+const initialize = (data) => {
+    //debugger
+    Services = data;
+    const cards = data.map(CreateCard)
+    cards.forEach(card=> section.append(card));
+    document.querySelectorAll('.read-more').forEach(val => val.addEventListener('click', showModal));
+    modalEvent();
 }
 
 
-fetch("assets/JSON/postregfac.json").then((response) => {
-        console.log(response);
-        return response.json();
-    })
-    .then((data) => {
-        data.forEach(CreateCard)
-        document.querySelectorAll('.read-more').forEach(val => val.addEventListener('click', showModal));
-        $('.module').on('hidden.bs.modal', function (e) {
-            //debugger
-            removeModal(this);
-            this.querySelector('.full-text').classList.add('truncate-text');
-            this.querySelector('.full-text').classList.remove('full-text');
-            this.querySelector('.full-header').classList.add('truncate-header');
-            this.querySelector('.full-header').classList.remove('full-header');
-            // do something...
-        });
-        $('.module').on('show.bs.modal', function (e) {
-            debugger;
-            this.querySelector('.read-less').removeEventListener("click", showModal)
-            this.querySelector('.truncate-text').classList.add('full-text');
-            this.querySelector('.truncate-text').classList.remove('truncate-text');
-            this.querySelector('.truncate-header').classList.add('full-header');
-            this.querySelector('.truncate-header').classList.remove('truncate-header');
-            // do something...
-        });
+
+fetch("assets/JSON/postregfac.json").then(response =>  response.json()).then(initialize);
+
+const modalEvent = () =>{
+    $('.module').on('hidden.bs.modal', function (e) {
+        //debugger
+        removeModal(this);
+        this.querySelector('.full-text').classList.add('truncate-text');
+        this.querySelector('.full-text').classList.remove('full-text');
+        this.querySelector('.full-header').classList.add('truncate-header');
+        this.querySelector('.full-header').classList.remove('full-header');
+        // do something...
     });
 
-
+    $('.module').on('show.bs.modal', function (e) {
+        //debugger;
+        this.querySelector('.read-less').removeEventListener("click", showModal)
+        this.querySelector('.truncate-text').classList.add('full-text');
+        this.querySelector('.truncate-text').classList.remove('truncate-text');
+        this.querySelector('.truncate-header').classList.add('full-header');
+        this.querySelector('.truncate-header').classList.remove('truncate-header');
+        // do something...
+    });
+}
 
 $(".ct-btn-scroll").on('click', function (event) {
     if (this.hash !== "") {
@@ -139,74 +150,88 @@ $(".ct-btn-scroll").on('click', function (event) {
     }
 });
 
-function CreateHTMLElement(HTMLElement, {
+const CreateHTMLElement = (HTMLElement, {
     htmlclass: [...classes],
     htmlattribute: attr
-} = {}) {
+} = {}) => {
     const element = document.createElement(HTMLElement);
     classes.length > 0 ? classes.forEach(val => element.classList.add(val)) : "";
     typeof attr !== "undefined" ? setAttributes(element, attr) : "";
     return element;
 }
 
-const CreateCard = function (response) {
+const CreateCard = ({
+    ServiceImage = "",
+    ServiceTitle,
+    ServiceDescription,
+    ServicePrice,
+    ServiceUrl = "#",
+    Sub = []
+} = response, index=0) => {
     //debugger;
-    const {
-        ServiceImage,
-        ServiceTitle,
-        ServiceDescription,
-        ServicePrice,
-        ServiceUrl = "#"
-    } = response;
     const Card = CreateHTMLElement("div", {
         htmlclass: "card module d-flex justify-content-center hvr-grow mb-4 shadow lead".split(" "),
         htmlattribute: {
             "data-aos": "fade-up"
         }
     });
+
     const Image = CreateHTMLElement("IMG", {
         htmlclass: "card-img img-fluid img-top".split(" "),
         htmlattribute: {
             src: ServiceImage
         }
     });
+
     const CardHeader = CreateHTMLElement("div", {
         htmlclass: "card-header py-0 bg-white border-bottom-0".split(" ")
     });
+
     const cardTitle = CreateHTMLElement("div", {
         htmlclass: "my-0 truncate-header font-weight-normal".split(" "),
         htmlattribute: {
             "title": ServiceTitle
         }
     });
+
     const CardBody = CreateHTMLElement("div", {
         htmlclass: "card-body py-0 d-flex flex-column".split(" "),
     });
+
     const CardBodyContent = CreateHTMLElement("p", {
         htmlclass: "truncate-text".split(" "),
         htmlattribute: {
             "title": ServiceDescription
         }
     });
+
     const ReadMore = CreateHTMLElement("P", {
         htmlclass: "nav-link read-more mb-0".split(" "),
         htmlattribute: {
             "title": "read more"
         }
     });
+
     const CardFooter = CreateHTMLElement("div", {
         htmlclass: "card-footer py-2 bg-white border-top-0".split(" ")
     });
+
     const Price = CreateHTMLElement("p", {
         htmlclass: "text-muted font-weight-bold".split(" ")
     });
+
     const Click = CreateHTMLElement("a", {
         htmlclass: "nav-link text-success p-0".split(" "),
         htmlattribute: {
-            "href": `${ServiceUrl}`,
             "target": "_blank"
         }
     });
+    //debugger
+    Sub.length > 0? (function(){
+        debugger;
+        Click.classList.add('expand-more');
+        setAttributes(Click, {"id": `expand-${index}`});
+    })() : setAttributes(Click, {"href": ServiceUrl})
 
     Click.textContent = "click to proceed"
     CardBodyContent.textContent = ServiceDescription;
@@ -225,7 +250,12 @@ const CreateCard = function (response) {
     Card.appendChild(CardHeader);
     Card.appendChild(CardBody);
     Card.appendChild(CardFooter);
-    cards = document.querySelectorAll('.card');
-    section.append(Card);
-
+    return Card;
 }
+
+const loadSub = (index=0)=> {
+    const card = Services[index].map(CreateCard);
+    const selectedCard = document.querySelector(`#expand-${index}`);
+    selectedCard.querySelector
+};
+
