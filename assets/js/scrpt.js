@@ -2,7 +2,7 @@ AOS.init();
 const section = document.querySelector('#section2');
 
 const showModal = (e, card = "") => {
-    //debugger;
+    
     if (card === "") {
         card = e.currentTarget.parentElement.parentElement;
     } else
@@ -104,7 +104,7 @@ const removeAttributes = (el, ...attrs) => {
 }
 let Services;
 const initialize = (data) => {
-    //debugger
+    
     Services = data;
     const cards = data.map(CreateCard)
     cards.forEach(card=> section.append(card));
@@ -118,7 +118,7 @@ fetch("assets/JSON/postregfac.json").then(response =>  response.json()).then(ini
 
 const modalEvent = () =>{
     $('.module').on('hidden.bs.modal', function (e) {
-        //debugger
+        
         removeModal(this);
         this.querySelector('.full-text').classList.add('truncate-text');
         this.querySelector('.full-text').classList.remove('full-text');
@@ -128,7 +128,7 @@ const modalEvent = () =>{
     });
 
     $('.module').on('show.bs.modal', function (e) {
-        //debugger;
+        
         this.querySelector('.read-less').removeEventListener("click", showModal)
         this.querySelector('.truncate-text').classList.add('full-text');
         this.querySelector('.truncate-text').classList.remove('truncate-text');
@@ -168,7 +168,7 @@ const CreateCard = ({
     ServiceUrl = "#",
     Sub = []
 } = response, index=0) => {
-    //debugger;
+    
     const Card = CreateHTMLElement("div", {
         htmlclass: "card module d-flex justify-content-center hvr-grow mb-4 shadow lead".split(" "),
         htmlattribute: {
@@ -226,9 +226,9 @@ const CreateCard = ({
             "target": "_blank"
         }
     });
-    //debugger
+    
     Sub.length > 0? (function(){
-        debugger;
+        
         Click.classList.add('expand-more');
         setAttributes(Click, {"id": `expand-${index}`});
     })() : setAttributes(Click, {"href": ServiceUrl})
@@ -252,7 +252,7 @@ const CreateCard = ({
     Card.appendChild(CardFooter);
     return Card;
 }
-
+//made
 const loadSub = (index=0)=> {
     const card = Services[index].map(CreateCard);
     const selectedCard = document.querySelector(`#expand-${index}`);
